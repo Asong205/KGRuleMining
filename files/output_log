@@ -1,0 +1,49 @@
+Logfile
+~~~~~~~
+
+indexing dataset: D:/datasets/drug/train.txt
+time elapsed: 142ms
+
+SAFE_PREFIX_MODE = false
+SINGLE_RELATIONS = result_of
+FORBIDDEN_RELATIONS = null
+PATH_TRAINING = D:/datasets/drug/train.txt
+CONSTANTS_OFF = true
+PATH_OUTPUT = rules
+PATH_DICE = null
+SNAPSHOTS_AT = 1 5 10 
+SAMPLE_SIZE = 2000
+TRIAL_SIZE = 1000000
+BATCH_TIME = 10
+WORKER_THREADS = 20
+ZERO_RULES_ACTIVE = false
+MAX_LENGTH_CYCLIC = 3
+MAX_LENGTH_ACYCLIC = 1
+THRESHOLD_CORRECT_PREDICTIONS = 10
+THRESHOLD_CONFIDENCE = 0.0
+EPSILON = 0.1
+SPECIALIZATION_CI = -1.0
+REWARD = 5
+POLICY = 2
+MAX_LENGTH_GROUNDED_CYCLIC = 1
+AC_MIN_NUM_OF_LAST_ATOM_GROUNDINGS = 5
+BEAM_SAMPLING_MAX_BODY_GROUNDINGS = 1000
+BEAM_SAMPLING_MAX_BODY_GROUNDING_ATTEMPTS = 10000
+BEAM_SAMPLING_MAX_REPETITIONS = 3
+REWRITE_REFLEXIV = true
+EXCLUDE_AC2_RULES = false
+
+
+rule file: rules-1
+zero: 0
+cyclic: 18 | 123 | 91 | 
+acyclic: 111 | time planned: 1s
+time elapsed: 2s
+
+
+rule file: rules-5
+zero: 0
+cyclic: 24 | 710 | 736 | 
+acyclic: 679 | time planned: 5s
+time elapsed: 6s
+
